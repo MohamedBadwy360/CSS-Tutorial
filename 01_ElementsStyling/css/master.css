@@ -1,0 +1,9 @@
+/* Target all paraghraphs */
+p {
+    color: green;
+}
+
+/* Target all elements with the class "special" */
+.special {
+    color: blue;
+}
