@@ -1,0 +1,17 @@
+div {
+    /* background color */
+    /* color name */
+    background-color: red;
+
+    /* rgb color (red green blue / alphaChannel) */
+    background-color: rgb(255 0 0 / 0.5);
+
+    /* Hexa color */
+    background-color: #ff0000;
+
+    /* background image */
+    background-image: url("../imgs/f8fc874d-8b89-4fdd-aac2-e93c602d9b2e.jpg");
+
+    /* background repeat */
+    background-repeat: repeat;
+}
