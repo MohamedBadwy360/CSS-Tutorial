@@ -1,0 +1,24 @@
+div {
+    background-color: #ff0fff;
+    background-image: url('https://www.w3schools.com/css/img_fjords.jpg');
+    background-repeat: no-repeat;
+
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+
+    /* background-position */
+    background-position: left top;
+    /* background-position: from-left-px from-top-px; */
+    background-position: 100px 200px;
+    /* background-position: from-left% from-top-%; */
+    background-position: 50% 50%;
+
+    /* background-size: auto */
+    background-size: auto;
+    background-size: cover;
+    background-size: contain;
+    /* background-size: width height */
+    background-size: 100px 200px;
+    /* background-size: width% height% */
+    background-size: 20% 40%;
+}
