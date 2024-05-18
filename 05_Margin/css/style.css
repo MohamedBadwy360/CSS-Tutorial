@@ -1,0 +1,40 @@
+div {
+    background-color: #DDD;
+    padding: 10px;
+
+    /* 
+        margin doesn't affect the background color of the element
+        margin doesn't affect the border of the element
+        margin doesn't affect the padding of the element
+        margin accepts negative values
+    */
+
+    /* margin: top right bottom left; */
+    /* margin: 10px 10px 10px 10px; */
+    margin: 10px;
+
+    width: 70%;
+
+    /* margin: 15%; */
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* margin: auto; */
+}
+
+.special {
+    background-color: #DDD;
+    padding: 10px;
+
+    /* 
+        margin doesn't affect the background color of the element
+        margin doesn't affect the border of the element
+        margin doesn't affect the padding of the element
+        margin accepts negative values
+    */
+
+    /* margin: top right bottom left; */
+    /* margin: 10px 10px 10px 10px; */
+    margin-left: -30px;
+}
