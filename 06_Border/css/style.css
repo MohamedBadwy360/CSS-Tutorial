@@ -1,0 +1,22 @@
+div {
+    background-color: #DDD;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+
+    /* Border */
+    /* border-width: top right bottom left; */
+    /* border-width: 2px 2px 2px 2px; */
+    border-width: 10px;
+
+    /* border-color: top right bottom left; */
+    /* border-color: rebeccapurple burlywood darkslategray darkorange; */
+    border-color: rebeccapurple burlywood darkslategray darkorange;
+
+    /* border-style: top right bottom left; */
+    /* border-style: solid solid solid solid; */
+    border-style: solid;
+
+    /* border: width style color; */
+    border: 10px solid rebeccapurple;
+}
