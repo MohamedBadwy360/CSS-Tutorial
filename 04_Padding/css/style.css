@@ -1,7 +1,7 @@
 div {
     background-color: rebeccapurple;
 
-    /* padding doesn't affect the width and height of the element
+    /*
        padding doesn't affect the background color of the element
        padding doesn't affect the border of the element
        padding doesn't affect the margin of the element
