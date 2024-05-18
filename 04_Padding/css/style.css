@@ -1,0 +1,26 @@
+div {
+    background-color: rebeccapurple;
+
+    /* padding doesn't affect the width and height of the element
+       padding doesn't affect the background color of the element
+       padding doesn't affect the border of the element
+       padding doesn't affect the margin of the element
+       padding doesn't accept negative values
+    */
+
+    /* padding: top right bottom left; */
+    /* padding: 10px 10px 10px 10px; */
+    padding: 10px;
+
+    /* padding: top/bottom right/left; */
+    /* padding: top right bottom left; */
+    /* padding: 10px 20px 10px 20px; */
+    padding: 10px 20px;
+
+    /* padding: top right bottom left; */
+    /* padding: 10px 20px 15px 20px; */
+    padding: 10px 20px 15px;
+
+    /* padding-position: 20px; */
+    padding-bottom: 20px;
+}
