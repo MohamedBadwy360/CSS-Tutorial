@@ -1,0 +1,15 @@
+div {
+    background-color: #DDD;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    border: 10px solid rebeccapurple;
+
+    /* Outline
+        outline isn't a part of the box model
+        it doesn't affect the size of the box
+        it's drawn outside the border
+        I can't control the direction of the outline
+    */
+    outline: 10px solid darkorange;
+}
