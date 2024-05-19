@@ -1,0 +1,29 @@
+div {
+    background-color: rebeccapurple;
+    color: darkgoldenrod;
+    /*
+        text-decoration property
+        text-decoration property is used to set or remove decorations from text.
+        text-decoration values: none, underline, overline, line-through, initial, inherit.
+    */
+    text-decoration: underline;
+}
+
+a {
+    background-color: darkorange;
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.special {
+    /*
+        text-transform property
+        text-transform property is used to control the capitalization of text.
+        text-transform values: none, capitalize, uppercase, lowercase, initial, inherit.
+    */
+    text-transform: uppercase;
+}
