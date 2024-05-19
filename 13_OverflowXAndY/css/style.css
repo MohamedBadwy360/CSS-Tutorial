@@ -1,0 +1,24 @@
+div {
+    background-color: #EEE;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 6px;
+
+    /* default overflow is visible */
+    /* visible will show the content that overflows */
+    /* overflow: visible; */
+
+    /* hidden will hide the content that overflows */
+    /* overflow: hidden; */
+
+    /* scroll will show the scrollbar */
+    /* overflow: scroll; */
+
+    /* auto will show the scrollbar only when needed */
+    /* overflow: auto; */
+
+    /* overflow-x and overflow-y */
+    /* overflow-x: hidden; */
+    overflow-y: hidden;
+}
