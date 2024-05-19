@@ -1,0 +1,29 @@
+div {
+    background-color: rebeccapurple;
+    color: darkorange;
+
+    /* 
+        text-align property
+        text-align property is used to align text.
+        It can be used to align text to the left, right, center, or justified. 
+        The default value is left.
+        text-align values: left, right, center, justify, initial, inherit.
+    */
+    text-align: center;
+
+    /* 
+        direction property
+        The direction property specifies the text direction/writing direction of the text in an element.
+        direction values: ltr, rtl, initial, inherit.
+    */
+    direction: ltr;
+}
+
+img {
+    /*
+        vertical-align property
+        The vertical-align property sets the vertical alignment of an element.
+        vertical-align values: baseline, length, sub, super, top, text-top, middle, bottom, text-bottom, initial, inherit.
+    */
+    vertical-align: middle;
+}
