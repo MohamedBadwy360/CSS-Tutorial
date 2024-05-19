@@ -1,0 +1,51 @@
+div {
+    background-color: #ff5722;
+
+    /* 
+        letter-spacing property
+        The letter-spacing property increases or decreases the space between characters in a text.
+        Negative values are allowed.
+    */
+    letter-spacing: 5px;
+
+
+    /*
+        text-indent property
+        The text-indent property specifies the indentation of the first line in a text-block.
+        Negative values are allowed.
+    */
+    text-indent: 50px;
+
+    /*
+        line-height property
+        The line-height property specifies the height of a line.
+        This property sets the space between lines of text.
+        Note: The line-height property can also be expressed as a number, which will be multiplied by the font-size.
+    */
+    /* line-height: 1.6 or 160%; */
+    line-height: 1.6;
+
+    /*
+        word-spacing property
+        The word-spacing property increases or decreases the space between words in a text.
+        Negative values are allowed.
+    */
+    word-spacing: 10px;
+
+    /*
+        white-space property
+        The white-space property specifies how white-space inside an element is handled.
+        white-space values: normal, nowrap, pre, pre-line, pre-wrap, initial, inherit.
+        default value: normal
+    */
+    width: 400px;
+    white-space: nowrap;
+
+    /*
+        word-break property
+        The word-break property specifies line breaking rules.
+        word-break values: normal, break-all, keep-all, break-word, initial, inherit.
+        default value: normal
+    */
+    word-break: break-all;
+}
