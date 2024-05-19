@@ -1,0 +1,27 @@
+div {
+    background-color: rebeccapurple;
+    margin: 10px 0;
+
+    /* 
+        display property
+        - none: hides the element and removes it from the layout
+        - block: shows the element as a block element
+        - inline: shows the element as an inline element
+        - inline-block: shows the element as an inline-block element
+    */
+    /* display: none; */
+
+    /* 
+        visibility property
+        - hidden: hides the element but still takes up space
+        - collapse: only for table elements, hides the element but still takes up space
+        - visible: shows the element
+    */
+    visibility: visible;
+}
+
+.one {
+    background-color: rebeccapurple;
+    margin: 10px 0;
+    visibility: hidden;
+}
