@@ -1,0 +1,8 @@
+div {
+    background-color: #EEE;
+    color: rebeccapurple;
+
+    /* Text shadow */
+    /* syntax => text-shadow: h-shadow v-shadow blur-radius color; */
+    text-shadow: 1px 1px 1px darkorange;
+}
