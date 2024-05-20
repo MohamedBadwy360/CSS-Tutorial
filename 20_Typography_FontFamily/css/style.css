@@ -1,0 +1,16 @@
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+div {
+    background-color: #EEE;
+    padding: 10px;
+    text-align: center;
+    /* serif means => a font with a small decorative line added to a character */
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+p {
+    /* sans-serif means => a font without the decorative line added to a character */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
