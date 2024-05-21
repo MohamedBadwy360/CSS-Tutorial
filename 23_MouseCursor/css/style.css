@@ -1,0 +1,40 @@
+h3 {
+    /* 
+        cursor property is used to change the mouse cursor when you move the mouse over the element.
+        The cursor property is specified as zero or more values, separated by commas, followed by a single mandatory keyword value.
+        values: 
+            auto: The browser determines the cursor to display based on the current context.
+            crosshair: The cursor is a crosshair.
+            default: The default cursor.
+            pointer: The cursor is a pointer that indicates a link.
+            move: The cursor indicates something that should be moved.
+            e-resize: The cursor indicates that an edge of a box is to be moved right (east).
+            ne-resize: The cursor indicates that an edge of a box is to be moved up and right.
+            nw-resize: The cursor indicates that an edge of a box is to be moved up and left.
+            n-resize: The cursor indicates that an edge of a box is to be moved up.
+            se-resize: The cursor indicates that an edge of a box is to be moved down and right.
+            sw-resize: The cursor indicates that an edge of a box is to be moved down and left.
+            s-resize: The cursor indicates that an edge of a box is to be moved down.
+            w-resize: The cursor indicates that an edge of a box is to be moved left.
+            text: The cursor indicates text that may be selected.
+            wait: The cursor indicates that the program is busy (often a spinning wait cursor).
+            help: The cursor indicates that help is available.
+            progress: The cursor indicates that the program is busy in the background but the user can still interact with the interface.
+            none: No cursor is rendered.
+            context-menu: The cursor indicates that a context-menu is available.
+            cell: The cursor indicates that a cell (or set of cells) may be selected.
+            vertical-text: The cursor indicates vertical-text that may be selected.
+            alias: The cursor indicates an alias of something is to be created.
+            copy: The cursor indicates that something can be copied.
+            move: The cursor indicates that something can be moved.
+            no-drop: The cursor indicates that the dragged item cannot be dropped at the current location.
+            not-allowed: The cursor indicates that the requested action will not be executed.
+            grab: The cursor indicates that something can be grabbed.
+            grabbing: The cursor indicates that something is being grabbed.
+            all-scroll: The cursor indicates that something can be scrolled in any direction.
+            col-resize: The cursor indicates that the column can be resized horizontally.
+            row-resize: The cursor indicates that the row can be resized vertically.
+            zoom-in: The cursor indicates that something can be zoomed in.
+    */
+    cursor: pointer;
+}
