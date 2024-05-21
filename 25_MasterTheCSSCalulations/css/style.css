@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    margin-left: 1%;
+    width: calc(94% / 5);
+}
+
+/* 
+    content is 100%
+    6 spaces with 1% = 6%
+    available spaces = 94%
+    width = 94% / 5
+*/
