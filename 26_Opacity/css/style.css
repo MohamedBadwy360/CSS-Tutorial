@@ -1,0 +1,15 @@
+.one {
+    background-color: red;
+
+    /* 
+        Opacity
+        - The opacity property in CSS specifies how transparent an element is.
+        - The value of the opacity property can be a number from 0.0 - 1.0.
+        - The lower the value, the more transparent.
+    */
+    opacity: 0.1;
+}
+
+.two {
+    background-color: rgb(255 0 0 / .1);
+}
