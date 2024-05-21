@@ -1,0 +1,21 @@
+.parent {
+    background-color: red;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+.parent div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width: 25%;
+}
+
+.clear {
+    /* 
+        clear property in CSS is used to control the behavior of an element in relation to floated elements. When an element is floated, it is taken out of the normal flow of the document, which can cause other elements to wrap around it.
+    */
+    clear: both;
+}
