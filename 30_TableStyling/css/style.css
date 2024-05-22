@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    /* border: 1px solid black; */
+
+    /* 
+        border-spacing property sets the distance between the borders of adjacent cells.
+        The border-spacing property can have one or two values.
+        The first value sets the distance between the borders in horizontal direction.
+        The second value sets the distance between the borders in vertical direction.
+        If the second value is not set, it is the same as the first.
+    */
+    border-spacing: 0px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+table thead td {
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    border-color: #9d2020;
+}
