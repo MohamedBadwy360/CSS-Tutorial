@@ -1,0 +1,72 @@
+/* 
+    seudo clases property is a keyword added to a selector that specifies a special state of the selected elements.
+    For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+    A pseudo-class is used to define a special state of an element.
+    For example, it can be used to:
+    Style an element when a user mouses over it => :hover
+    Style visited and unvisited links differently => :link and :visited
+    Style an element when it gets focus => :focus
+    Style an element when it gets clicked => :active
+    Style an element when a user starts to interact with it => :hover
+    Style an element when it gets selected => :checked
+    Style different elements depending on its position => :nth-child
+    Style an element that is being dragged => :drag
+    Style an element that is being dragged over => :dragover
+    Style an element that is being dropped => :drop
+    Style the first letter, or line, of an element => :first-letter and :first-line
+    Style an element that is being printed => :print
+    Style an element that is being read => :read-only and :read-write
+    Style an element that is invalid => :invalid
+    Style an element that is in a specific language => :lang
+    Style an element that is the target of the hyperlink => :target
+    Style an element that has no children => :empty
+    Style an element that is enabled or disabled => :enabled and :disabled
+    Style an element that is the only child of its parent => :only-child
+    Style an element that is the first child, last child, or nth child of its parent => :first-child, :last-child, :nth-child
+*/
+
+.one {
+    background-color: red;
+    color: white;
+}
+
+.two,
+p {
+    background-color: #EEE;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.ch:checked+label {
+    color: red;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
+
+/* div:empty {
+    border: 1px solid red;
+} */
+
+:empty {
+    border: 1px solid red;
+}
+
+.in {
+    border: 2px solid black;
+}
+
+.in:focus {
+    border-color: yellow;
+    outline: none;
+}
