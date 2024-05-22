@@ -1,0 +1,45 @@
+li {
+    background-color: rebeccapurple;
+    margin: 10px;
+
+    /*
+        list-style-type property specifies the type of list-item marker.
+        The list-style-type property can have one of the following values:
+        disc - Default. The marker is a filled circle
+        circle - The marker is a circle
+        square - The marker is a square
+        none - No marker
+        decimal - The marker is a number
+        decimal-leading-zero - The marker is a number with leading zeros (01, 02, 03, etc.)
+    */
+    list-style-type: disc;
+
+    /* 
+        list-style-position property specifies the position of the list-item markers (bullet points).
+        The list-style-position property can have one of the following values:
+        inside - The marker is inside the box of the list item
+        outside - The marker is outside the box of the list item
+        default value is outside
+    */
+    list-style-position: inside;
+
+    /* 
+        list-style-image property specifies an image as the list-item marker.
+        The list-style-image property can have one of the following values:
+        none - No image will be displayed
+        url('URL') - The URL to the image
+    */
+
+    /* 
+        list-style property is a shorthand property for setting all the properties for a list in one declaration.
+        syntax => list-style: list-style-type list-style-position list-style-image;
+    */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
