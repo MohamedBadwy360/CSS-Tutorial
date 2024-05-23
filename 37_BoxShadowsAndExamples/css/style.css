@@ -1,0 +1,18 @@
+/* 
+    box-shadow: h-shadow v-shadow blur spread color inset;
+    h-shadow: horizontal shadow
+    v-shadow: vertical shadow
+    blur: blur radius
+    spread: spread radius
+    color: color of shadow
+    inset: optional, changes shadow to inner shadow
+*/
+
+div {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #EEE;
+    width: 300px;
+    box-shadow: 10px 10px 5px 1px #888;
+    /* you can make more than one shadow */
+}
