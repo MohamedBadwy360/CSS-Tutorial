@@ -1,0 +1,39 @@
+/* 
+    border-radius property is used to create rounded corners on an element.
+    The value of border-radius can be a single value or four values.
+    If it is a single value, it applies to all four corners.
+    If it is four values, they apply to top-left, top-right, bottom-right, and bottom-left corners respectively.
+    border-radius: 50% - makes a circle
+    border-radius: 5px - makes a rounded rectangle
+    border-radius: 5px 10px 15px 20px - makes a rounded rectangle with different radii for each corner
+    border-radius: 5px 10px - makes a rounded rectangle with the same radii for top-left and bottom-right corners and different radii for top-right and bottom-left corners
+    border-radius: 5px 10px 5px 10px - makes a rounded rectangle with different radii for top-left and bottom-right corners and top-right and bottom-left corners
+    border-radius: 5px 10px 15px - makes a rounded rectangle with different radii for top-left, top-right, and bottom-left corners and the same radii for bottom-right corner
+*/
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #f00;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 50px auto;
+    border-radius: 50%;
+}
+
+.rectangle {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    margin: 50px auto;
+    /* border-top-left-radius can take one value or two values */
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 20px;
+    border-bottom-right-radius: 10px;
+}
