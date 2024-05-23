@@ -1,0 +1,35 @@
+/* 
+    Box Model:
+    - Content (width, height)
+    - Padding (inner space)
+    - Border (border width, border style, border color)
+    - Margin (outer space)
+
+    Box Sizing:
+    - content-box (default) - width and height only apply to the content
+    - border-box - width and height apply to the content, padding, and border
+    - padding-box - width and height apply to the content and padding
+    - margin-box - width and height apply to the content, padding, border, and margin
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 640px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.one {
+    background-color: #eee;
+    width: 300px;
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+}
