@@ -1,0 +1,42 @@
+/* 
+    SeudoElementos
+    ::first-letter => it is used to style the first letter of the text in an element.
+    ::first-line => it is used to style the first line of the text in an element.
+    ::selection => it is used to style the selected text in an element.
+    ::before => it is used to add content before the content of an element.
+    ::after => it is used to add content after the content of an element.
+    ::placeholder => it is used to style the placeholder text in an input element.
+    ::backdrop => it is used to style the backdrop of the selected text in an element.
+    ::marker => it is used to style the list marker of a list item.
+    ::spelling-error => it is used to style the spelling error in an element.
+    ::grammar-error => it is used to style the grammar error in an element.
+    ::part => it is used to style the shadow DOM part of an element.
+    ::slotted => it is used to style the slotted content of an element.
+    ::cue => it is used to style the cue text of an element.
+*/
+
+.one span {
+    display: inline-block;
+    font-size: 60px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.two::first-letter {
+    display: inline-block;
+    font-size: 60px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.three::first-line {
+    color: green;
+    font-weight: bold;
+}
+
+.four::selection {
+    background-color: black;
+    color: yellow;
+}
