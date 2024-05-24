@@ -1,0 +1,18 @@
+/* 
+    !important is a declaration that can be added to a rule to give it the highest priority.
+    It overrides all other declarations, no matter where they are in the CSS file.
+    It is used to make sure that a certain property is applied to an element regardless of the specificity of the selector.
+    It is not recommended to use !important because it makes the code harder to maintain and understand.
+    It is better to use more specific selectors or refactor the code to avoid using !important.
+    !important should be used as a last resort when no other solution is possible.
+    !important should be used sparingly and only when absolutely necessary.
+    !important should be avoided whenever possible.
+*/
+
+.one {
+    background-color: green !important;
+}
+
+.one {
+    background-color: blue;
+}
