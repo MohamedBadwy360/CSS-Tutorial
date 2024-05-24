@@ -1,0 +1,71 @@
+/*
+  CSS Variables
+  - Global Variable
+  - Local Variable
+  var(Variable Name, Fall Back Value)
+*/
+
+/* 
+    CSS Variables are defined using the :root pseudo-class
+    - The :root pseudo-class is used to define global CSS variables
+    - The global variables can be accessed from anywhere in the document
+    - The global variables can be overridden by the local variables
+    - The local variables are defined using the element selector
+    - The local variables are only accessible within the element
+    - The local variables can be accessed from the child elements
+    - The local variables can be overridden by the global variables
+    - The CSS variables are case-sensitive
+    - The CSS variables are defined using the -- prefix
+    - The CSS variables are accessed using the var() function
+    - The var() function takes two arguments
+        - The first argument is the variable name
+        - The second argument is the fallback value
+    It is recommended to use the global variables for the common styles
+    It is recommended to use the local variables for the specific styles
+    The CSS variables can be used in the properties
+    The CSS variables can be used in the values
+    The CSS variables can be used in the functions
+    The CSS variables can be used in the media queries
+    The CSS variables can be used in the pseudo-classes
+    The CSS variables can be used in the pseudo-elements
+    The CSS variables can be used in the custom properties
+    It is useful to use the CSS variables for the responsive design
+    It is useful to use the CSS variables for the theming
+    It is useful to use the CSS variables for the animations
+*/
+
+:root {
+    --mainColor: blue;
+    --mainPadding: 20px;
+    --mainMargin: 10px;
+}
+
+.main {
+    background-color: var(--mainColor, black);
+    color: white;
+    padding: calc(20px + var(--mainPadding));
+}
+
+h2 {
+    color: var(--mainColor, black);
+    background-color: #eee;
+    padding: var(--mainPadding);
+}
+
+p {
+    color: var(--mainColor, black);
+    border: 2px solid var(--mainColor, black);
+    padding: var(--mainPadding);
+}
+
+a:hover {
+    color: var(--mainColor, black);
+}
+
+.local {
+    --mainColor: black;
+    background-color: var(--mainColor, black);
+    color: white;
+    padding: var(--mainPadding);
+    margin-top: var(--mainMargin);
+}
