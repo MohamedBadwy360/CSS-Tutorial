@@ -1,0 +1,67 @@
+/* 
+    transition-property is used to specify the name of the CSS property to which the transition effect is applied.
+    transition-duration is used to specify the duration of the transition effect.
+    transition-timing-function is used to specify the speed curve of the transition effect.
+    transition-delay is used to specify when the transition effect will start.
+    transition is a shorthand property for setting the four transition properties into a single property.
+    transition-property: all | none | property | property1, property2, ...;
+    transition-duration: Specifies how many seconds or milliseconds a transition effect takes to complete.
+    transition-duration: time | time1, time2, ...;
+    transition-timing-function: Specifies the speed curve of the transition effect.
+    transition-timing-function: ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n);
+    transition-delay: Specifies when the transition effect will start.
+    transition-delay: time | time1, time2, ...;
+    transition: A shorthand property for setting the four transition properties into a single property.
+    transition: property duration timing-function delay;
+    transition: property1 duration1 timing-function1 delay1, property2 duration2 timing-function2 delay2, ...;
+    transition: all 2s ease 0.5s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    transition: all 2s ease-in-out;
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: all 2s 0.5s ease-in-out;
+    transition: all 2s ease-in-out 0.5s;
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s;
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s;
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: all 2s 0.5s;
+    transition: all 2s ease-in-out;
+    transition: all 2s ease;
+    transition: all 2s;
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    /* transition-duration is for the duration of the transition effect */
+    transition-duration: 1s;
+    /* transition-property is for the name of the CSS property to which the transition effect is applied */
+    /* transition-property default value is all */
+    /* transition-property: margin-left, margin-top; */
+    transition-property: width;
+    /* transition-delay is for when the transition effect will start */
+    /* transition-delay: 1s; */
+    transition-delay: 0.2s;
+    /* transition-timing-function is for the speed curve of the transition effect */
+    /* transition-timing-function: ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n); */
+    /* transtion-timing-function default value is ease */
+    transition-timing-function: ease;
+    /* transition is a shorthand property for setting the four transition properties into a single property */
+    /* transition: property duration timing-function delay; */
+    /* transition: width 2s, height 1s; */
+    transition: all 1s 0.5s ease;
+}
+
+.one:hover {
+    /* margin-left: 20px;
+    margin-top: 20px; */
+    width: 300px;
+    height: 200px;
+}
