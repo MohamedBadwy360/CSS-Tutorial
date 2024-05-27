@@ -1,0 +1,82 @@
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    /* 
+        display: flex => To Start Flexible Box
+        Should be added to Parent Element
+    */
+    display: flex;
+
+    /* 
+        flex-direction should be added to Parent Element
+        flex-direction: row => Default Value
+        flex-direction: row-reverse => Reverse Row
+        flex-direction: column => Column
+        flex-direction: column-reverse => Reverse Column
+    */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* 
+        flex-wrap is used to wrap the content
+        it is for elements that are not fitting in the container
+        flex-wrap should be added to Parent Element
+        flex-wrap: nowrap => Default Value => will not wrap the content
+        flex-wrap: wrap => Wrap the content if it is not fitting => will wrap the content to next line
+        flex-wrap: wrap-reverse => Reverse Wrap the content if it is not fitting => will wrap the content to next line and reverse the order
+    */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* 
+        flex-flow is a shorthand property for flex-direction and flex-wrap
+        flex-flow should be added to Parent Element
+        flex-flow: [Flex-Direction] + [Flex-Wrap]
+    */
+    flex-flow: row wrap;
+}
+
+.flex div {
+    background-color: #f00;
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.float {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.float div {
+    background-color: #f00;
+    color: white;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
