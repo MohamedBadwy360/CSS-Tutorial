@@ -1,0 +1,79 @@
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+  For Child
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value
+*/
+
+/* 
+    flex-grow Property is used to specify how much a flex item will grow relative to the other flex items in the flex container.
+    It is used to distribute the remaining space in the flex container.
+    It has the following values:
+    - 0 => Default Value => The flex item will not grow.
+    - 1 => The flex item will grow to take up the remaining space.
+    - Number => The flex item will grow to take up the remaining space relative to the other flex items.
+*/
+
+/* 
+    flex-shrink Property is used to specify how much a flex item will shrink relative to the other flex items in the flex container.
+    It is used to distribute the remaining space in the flex container.
+    It has the following values:
+    - 0 => The flex item will not shrink.
+    - 1 => Default Value => The flex item will shrink to take up the remaining space.
+    - Number => The flex item will shrink to take up the remaining space relative to the other flex items.
+*/
+
+/* 
+    order Property is used to specify the order of the flex items in the flex container.
+    It has the following values:
+    - 0 => Default Value => The flex item will be displayed in the order it appears in the source code.
+    - Number => The flex item will be displayed in the order specified by the number.
+    elements with a lower order value will be displayed before elements with a higher order value.
+    you should switch the order of the elements in the source code.
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex {
+    background-color: #eee;
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.flex div {
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+.flex .three {
+    /* flex-grow: 3; */
+    flex-shrink: 3;
+}
+
+.flex .one {
+    order: 6;
+}
+
+.flex .two {
+    order: 5;
+}
