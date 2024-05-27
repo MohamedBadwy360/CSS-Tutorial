@@ -1,0 +1,57 @@
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  ---
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+*/
+
+/* 
+    align-content Property is used to align the flex lines in the flex container when there is extra space in the cross-axis.
+    It is similar to justify-content but in the cross-axis.
+    It moves all content to the start, end, center, space-between, space-around, and stretch.
+    It works only when there are multiple lines in the flex container.
+    It has the following values:
+    - stretch => Default Value => Stretches the lines to take up the remaining space.
+    - flex-start => Aligns the lines at the start of the container. 
+    - flex-end => Aligns the lines at the end of the container.
+    - center => Aligns the lines at the center of the container.
+    - space-between => Distributes the lines evenly with the first line at the start and the last line at the end.
+    - space-around => Distributes the lines evenly with equal space around them.
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex {
+    background-color: #eee;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start;
+    align-content: flex-start; */
+    /* align-items: flex-end;
+    align-content: flex-end; */
+    /* align-content: space-between;
+    align-content: space-around; */
+    align-content: space-evenly;
+}
+
+.flex div {
+    background-color: #f00;
+    color: white;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 20px;
+}
