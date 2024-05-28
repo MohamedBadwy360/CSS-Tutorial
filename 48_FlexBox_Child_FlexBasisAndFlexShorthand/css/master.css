@@ -1,0 +1,72 @@
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+  For Child
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value
+  - flex-basis: auto => Default Value
+  - flex: [Flex Grow] [Flex Shrink] [Flex Basis] => 0 1 Auto
+*/
+
+/* 
+    flex-basis => Width of the Flex Item before the remaining space is distributed. or height of the flex item before the remaining space is distributed.
+    depends on the main axis.
+    flex-basis prperty specifies the initial length of a flex item.
+    The initial main size of the flex item, before free space is distributed according to the flex factors.
+    flex-basis value can be a length (e.g. 20%, 5rem, etc) or auto.
+    flex-basis value can be a percentage, pixel, em, rem, etc.
+    flex-basis value can be a negative value.
+    flex-basis value can be a zero value.
+    default value is auto.
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex {
+    background-color: #eee;
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+
+    /* 
+        display: inline-flex => To Start Flexible Box
+        inline-flex => It makes the container an inline-level flex container.
+        like flex but the container is inline-level.
+    */
+    display: inline-flex;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.flex div {
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    /* flex-grow: 1; */
+}
+
+.flex .three {
+    flex-basis: 200px;
+
+    /* flex: [Flex Grow] [Flex Shrink] [Flex Basis] */
+    flex: 1 1 200px;
+}
+
+.in {
+    display: inline-block;
+}
