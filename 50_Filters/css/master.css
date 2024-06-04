@@ -1,0 +1,24 @@
+/*
+    Filters is used to add special effects to elements.
+    - filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url()
+    - url() : SVG filter
+*/
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    transition: 0.3s;
+    /* filter: grayscale(100%); */
+    /* filter: blur(4px); */
+    filter: invert(100%);
+}
+
+img:hover {
+    /* filter: grayscale(0%); */
+    /* filter: blur(0); */
+    filter: invert(0);
+}
