@@ -1,0 +1,24 @@
+/*
+    Caret color property is used to set the color of the caret in the input field.
+    The caret is the blinking vertical line that indicates the current position of the text cursor.
+    The caret-color property is used to set the color of the caret in the input field.
+
+    Pointer events are a set of CSS properties that control how the browser behaves when a user interacts with an element.
+    The pointer-events property allows you to control how an element responds to mouse events.
+*/
+
+input {
+    caret-color: red;
+}
+
+a {
+    /*
+        The pointer-events property allows you to control how an element responds to mouse events.
+        The value none means that the element will not respond to mouse events.
+    */
+    pointer-events: none;
+}
+
+a:hover {
+    color: red;
+}
