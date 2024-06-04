@@ -1,0 +1,42 @@
+/*
+    Gradients are a great way to add depth and dimension to your website.
+    They can be used in a variety of ways, from backgrounds to text effects.
+    There are two main types of gradients: linear and radial.
+    - Linear gradients go in a straight line, while radial gradients radiate out from a central point.
+    - Radial gradients are great for creating a sense of depth and dimension, while linear gradients are perfect for creating a sense of movement and direction.
+    linear-gradient(Direction || Angle, Color Stop 1, Color Stop 2, ....)
+    - Direction: top, bottom, left, right
+    - Angle: 0deg, 90deg, 180deg, 270deg
+    - Color Stop: color value
+*/
+
+div {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    margin: 20px auto;
+    background-color: #eee;
+    padding: 10px;
+    /* background-image: linear-gradient(to right, red, green); */
+    /* background-image: linear-gradient(to right, red, green, blue, yellow); */
+    /* background-image: linear-gradient(to right, red 80%, green, blue, yellow); */
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    height: 10px;
+    width: 100%;
+    left: 0;
+    background-color: red;
+    background-image: linear-gradient(to right,
+            #2980b9 20%,
+            #27ae60 20%,
+            #27ae60 40%,
+            #d35400 40%,
+            #d35400 60%,
+            #8e44ad 60%,
+            #8e44ad 80%,
+            #c0392b 80%);
+}
