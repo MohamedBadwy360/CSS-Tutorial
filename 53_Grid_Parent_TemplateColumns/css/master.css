@@ -1,0 +1,51 @@
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat]
+*/
+
+/* 
+    Grid Property is used to create a grid container.
+    display: grid | inline-grid => It defines a container as a grid container.
+    grid-template-columns => It defines the number of columns in the grid container.
+    grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Repeat]
+    - Px => It defines the width of the column in pixels.
+    - % => It defines the width of the column in percentage.
+    - Auto => It defines the width of the column automatically.
+    - Repeat => It defines the number of columns to be repeated.
+    - fr => It defines the fraction unit of the available space in the grid container.
+    fr is greedy but auto is shy.
+    difference between fr and auto is that fr is greedy and auto is shy.
+    fr is greedy means it will take all the available space in the grid container.
+    auto is shy means it will take only the required space in the grid container.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px 200px; */
+    /* grid-template-columns: 25% 50% 25%; */
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-columns: repeat(5, auto); */
+    /* grid-template-columns: 100px 200px 25% auto; */
+    /* grid-template-columns: 100px 100px 1fr 2fr; */
+    /* grid-template-columns: auto auto 1fr 1fr; */
+    grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
