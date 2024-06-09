@@ -1,0 +1,59 @@
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+*/
+
+/* 
+    grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+    grid-template-rows property is used to define the height of each row in the grid.
+    - The value of the grid-template-rows property can be:
+        - Length: px, em, rem, %, etc.
+        - Fraction: fr
+        - Auto: auto
+        - Repeat: repeat(n, value)
+        - Mix: px, fr, %, auto, repeat(n, value)
+    
+    gap property is used to define the gap between the rows and columns in the grid.
+    - The value of the gap property can be:
+        - Length: px, em, rem, %, etc.
+        - Row Gap: [Row Gap]
+        - Column Gap: [Column Gap]
+        - Row Gap Column Gap: [Row Gap] [Column Gap]
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 100px 200px 100px; */
+    /* grid-template-rows: 100px auto 100px; */
+    /* grid-template-rows: 20% 60% 20%; */
+    /* grid-template-rows: 200px 1fr 100px; */
+    /* grid-template-rows: auto auto 1fr; */
+    /* grid-template-rows: 100px repeat(2, auto); */
+    grid-template-rows: repeat(3, 1fr);
+
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 10px 10px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
