@@ -1,0 +1,67 @@
+/* 
+    grid-template-areas property is used to define the layout of the grid.
+    It is used to define the names of the grid areas which can be referenced by the grid-template-rows and grid-template-columns properties.
+    The grid-template-areas property is used to specify the names of the grid areas.
+    The grid-template-areas property is used to specify the layout of the grid.
+    The grid-template-areas property is used to specify the names of the grid areas.
+    grid-template-areas values:
+        - The value of the grid-template-areas property is a string that specifies the names of the grid areas
+        - The names of the grid areas are separated by whitespace
+
+    grid-area property is used to specify the name of the grid area that an item should be placed in.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: grid;
+    height: 100vh;
+    background: #eee;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+        "logo logo nav nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont cont side side"
+        /* 
+            . => empty cell
+        */
+        /* "cont cont cont cont cont cont . cont side side" */
+        "foot foot foot foot foot foot foot foot foot foot";
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+h2 {
+    grid-area: logo;
+    background-color: burlywood;
+}
+
+nav {
+    grid-area: nav;
+    background-color: brown;
+}
+
+section {
+    grid-area: cont;
+    background-color: darkcyan;
+}
+
+aside {
+    grid-area: side;
+    background-color: darkgoldenrod;
+}
+
+footer {
+    grid-area: foot;
+    background-color: darkgreen;
+}
