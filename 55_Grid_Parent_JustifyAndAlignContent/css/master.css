@@ -1,0 +1,60 @@
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+*/
+
+/* 
+    justify-content property is used to align the grid items along the row axis.
+    - The value of the justify-content property can be:
+        - start: Items are packed toward the start line.
+        - end: Items are packed toward the end line.
+        - center: Items are centered along the line.
+        - stretch: Items are stretched to fit the container.
+        - space-around: Items are evenly distributed in the line with equal space around them.
+        - space-between: Items are evenly distributed in the line with equal space between them.
+        - space-evenly: Items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+    
+    align-content property is used to align the grid items along the column axis.
+    - The value of the align-content property can be:
+        - start: Items are packed toward the start line.
+        - end: Items are packed toward the end line.
+        - center: Items are centered along the line.
+        - stretch: Items are stretched to fit the container.
+        - space-around: Items are evenly distributed in the line with equal space around them.
+        - space-between: Items are evenly distributed in the line with equal space between them.
+        - space-evenly: Items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+        
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
