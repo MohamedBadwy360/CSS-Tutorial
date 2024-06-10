@@ -1,0 +1,33 @@
+/* 
+    minmax(min, max) - The minmax() function defines a size range greater than or equal to min and less than or equal to max.
+    auto-fill - The auto-fill keyword can be used with repeat() to fill the row/column with as many tracks as possible.
+    auto-fit - The auto-fit keyword can be used with repeat() to fill the row/column with as many tracks as possible without overflowing.
+    grid-auto-rows - The grid-auto-rows property specifies the size of the rows that are not defined using grid-template-rows.
+    grid-auto-columns - The grid-auto-columns property specifies the size of the columns that are not defined using grid-template-columns.
+    grid-auto-flow - The grid-auto-flow property specifies how the auto-placed items are placed in the grid.
+    grid - The grid property is a shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    margin: 20px auto;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    /* grid-template-columns: minmax(200px, 500px) repeat(2, 1fr); */
+    /* grid-template-columns: repeat(auto-fill, 200px) */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
