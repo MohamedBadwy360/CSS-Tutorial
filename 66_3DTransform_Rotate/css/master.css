@@ -1,0 +1,34 @@
+/* 
+    3d Transform Rotate Property is used to rotate an element in 3D space.
+
+    3D Transform Rotate
+    - rotateX()
+    - rotateY()
+    - rotateZ()
+    - rotate3d()
+
+    Syntax:
+    - rotateX(angle)
+    - rotateY(angle)
+    - rotateZ(angle)
+    - rotate3d(x, y, z, angle)
+
+*/
+
+
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: rotateX(50deg);
+    transform: rotateY(50deg);
+    transform: rotateZ(50deg);
+    transform: rotate3d(1, 1, 1, 50deg);
+}
