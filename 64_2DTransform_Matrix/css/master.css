@@ -1,0 +1,29 @@
+/*
+  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+*/
+
+/* 
+    transform matrix property is used to combine all the 2D transform functions into one.
+    The matrix() function combines all the 2D transform functions into one.
+    The matrix() function is specified with six values, where the first two values specify the scaling factor, the next two values specify the skew factor, and the last two values specify the translation.
+    The matrix() function is a more general form of the transform property.
+
+    Syntax:
+    transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+*/
+
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+
+    transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20);
+    transform: translateX(20px) translateY(20px) scaleX(1.2) skewY(15deg) skewX(0deg) scaleY(1.2);
+}
