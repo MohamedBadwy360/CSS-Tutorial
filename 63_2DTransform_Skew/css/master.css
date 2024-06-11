@@ -1,0 +1,56 @@
+/* 
+    transform skew property is used to skew an element along the X or Y axis.
+    The skew property is used to distort an element along the horizontal or vertical axis.
+    The skewX() function skews the element along the X-axis by the given angle.
+    The skewY() function skews the element along the Y-axis by the given angle.
+    The skew() function skews the element along the X and Y-axis by the given angles.
+    The angle parameter is required, and it specifies the angle of the skew transformation.
+    The angle parameter is specified in degrees.
+    The default value is 0deg.
+    The skew property is a shorthand property for the skewX and skewY properties.
+    The skew property is specified with two values, where the first value defines the skew on the X-axis, and the second value defines the skew on the Y-axis.
+
+    Syntax:
+    transform: skewX(angle);
+    transform: skewY(angle);
+    transform: skew(angleX, angleY);
+    transform: skew(angle);
+*/
+
+
+h2 {
+    position: relative;
+    color: white;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 20px;
+}
+
+h2::before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: skewX(20deg);
+}
+
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    /* transform: skewX(20deg); */
+    /* transform: skewX(-20deg); */
+    /* transform: skewY(20deg); */
+    transform: skew(20deg, 20deg);
+}
