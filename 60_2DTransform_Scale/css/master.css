@@ -1,0 +1,41 @@
+/* 
+    Transform property is used to rotate, scale, move, skew an element.
+    scale() function is used to scale an element.
+    It takes two values, one for x-axis and one for y-axis.
+    If only one value is given, it will be used for both x and y axis.
+    If the value is less than 1, the element will be scaled down.
+    If the value is greater than 1, the element will be scaled up.
+    If the value is negative, the element will be mirrored.
+    If the value is 0, the element will be hidden.
+    If the value is 1, the element will be displayed as it is.
+    If the value is 2, the element will be displayed twice as it is.
+    If the value is 0.5, the element will be displayed half as it is.
+    If the value is -1, the element will be displayed as it is but mirrored.
+
+    Syntax:
+    transform: scale(x, y);
+    transform: scale(x);
+    transform: scale(y);
+    transform: scale3d(x, y, z);
+    transform: scaleX(x);
+    transform: scaleY(y);
+    transform: scaleZ(z);
+*/
+
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    /* transform: scaleX(2);
+    transform: scaleY(2);
+    transform: scale(2, 2); */
+    /* transform: scale(-1); */
+    transform: scaleY(-1);
+}
