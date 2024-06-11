@@ -1,0 +1,34 @@
+/* 
+    translateX() - Translates an element horizontally along the x-axis by the specified value.
+    translateY() - Translates an element vertically along the y-axis by the specified value.
+    translateZ() - Translates an element along the z-axis by the specified value.
+    translate3d() - Translates an element in the 3D space.
+
+    perspective - Defines how many pixels a 3D element is placed from the view.
+    perspective-origin - Defines at which position the user is looking at the 3D element.
+
+    The perspective property is used to give a 3D-positioned element some perspective.
+    The perspective property defines how far the object is away from the user. The lower the value, the closer the object.
+    The perspective property is used to give a 3D-positioned element some perspective. The perspective property defines how far the object is away from the user. The lower the value, the closer the object.
+    The perspective-origin property defines at which position the user is looking at the 3D element.
+    The perspective-origin property is used in perspective to define the bottom position of the 3D element.
+*/
+
+.shape {
+    perspective: 300px;
+    perspective-origin: right top;
+}
+
+.shape div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: translate3d(0, 0, 100px);
+}
