@@ -1,0 +1,33 @@
+/* 
+    2D Transform Rotate Property is used to rotate an element in 2D space.
+    It is used to rotate the element clockwise or anti-clockwise.
+    The rotation is done from the center of the element.
+    The rotation is done in degrees.
+    The default value of the angle is 0deg.
+    - rotate(angle)
+        - angle: deg => degree
+        - angle: rad => radian
+        - angle: grad => gradient
+        - angle: turn => full rotation
+        - positive value: clockwise
+        - negative value: anti-clockwise
+        - default value: 0deg
+    - Syntax:
+    - transform: rotate(angle);
+*/
+
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    /* transform: rotate(45deg); */
+    /* transform: rotate(0.5turn); */
+    transform: rotate(-60deg);
+}
