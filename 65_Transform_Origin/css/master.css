@@ -1,0 +1,54 @@
+/* 
+    transform-origin => property allows you to change the position of transformed elements.
+    By default, the transform-origin of an element is 50% 50%.
+    This means that the element will be transformed from the center of the element.
+    The transform-origin property can be set using one, two, or three values.
+    If you specify one value, it defines the X-axis value (the Y-axis value is 50%).
+    If you specify two values, the first value is the X-axis value and the second value is the Y-axis value.
+    If you specify three values, the first value is the X-axis value, the second value is the Y-axis value, and the third value is the Z-axis value.
+    The transform-origin property is used in conjunction with CSS transforms, letting you change the point of origin of a transform.
+    The default value of the transform-origin property is 50% 50% 0.
+    The transform-origin property is used to change the position of the origin of a transformed element.
+    The transform-origin property is used in conjunction with CSS transforms, letting you change the point of origin of a transform.
+
+    transform-origin: X Y;
+    X => left, center, right, %, px, em, rem
+    Y => top, center, bottom, %, px, em, rem
+*/
+
+/*
+  transform-origin
+  Syntax
+  Default Values => 50% 50% 0
+  2D Transform => transform-origin(X, Y)
+  3D Transform => transform-origin(X, Y, Z)
+  X-Axis
+  - CSS Unit [px, em, rem]
+  - %
+  - Keyword
+  -- Left = 0%
+  -- Center = 50%
+  -- Right = 100%
+  Y-Axis
+  - CSS Unit [px, em, rem]
+  - %
+  - Keyword
+  -- Top = 0%
+  -- Center = 50%
+  -- Bottom = 100%
+*/
+
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform-origin: 0% 50%;
+    transform: rotate(45deg);
+}
