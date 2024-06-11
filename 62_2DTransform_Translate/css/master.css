@@ -1,0 +1,28 @@
+/* 
+    transform translate property is used to move an element from its current position.
+    It is used to move the element horizontally and vertically.
+    The default value of the translation is 0px.
+    - translate(x, y)
+        - x: px => pixel
+        - y: px => pixel
+        - positive value: right and down
+        - negative value: left and up
+        - default value: 0px
+    - Syntax:
+    - transform: translate(x, y);
+
+*/
+
+div {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: translate(100px, 100px);
+}
