@@ -1,0 +1,98 @@
+/*
+  Animation
+  - KeyFrames
+  - Name
+  - Duration
+*/
+
+/* 
+    Animation is a CSS property that allows you to create movement in your web pages.
+    You can change as many properties you want, as many times you want, in any way you want.
+    You can change the CSS properties of an element over time.
+    To use CSS animation, you must first specify some keyframes for the animation.
+    Keyframes hold what styles the element will have at certain times.
+    To create a keyframe, you use the @keyframes rule.
+    The @keyframes rule specifies the animation code.
+    The animation code specifies what the animation looks like.
+    The animation code can be divided into two sections: the first section defines the animation name, and the second section defines the keyframes for the animation.
+    The animation-name property specifies the name of the @keyframes rule.
+    The animation-duration property specifies how long time an animation should take to complete.
+    The animation-timing-function property specifies the speed curve of the animation.
+    The animation-delay property specifies a delay for the start of an animation.
+    The animation-iteration-count property specifies the number of times an animation should run.
+    The animation-direction property specifies whether an animation should be played forwards, backwards, or in alternate cycles.
+    The animation-fill-mode property specifies a style for the target element when the animation is not playing.
+    The animation-play-state property specifies whether the animation is running or paused.
+    The animation shorthand property sets all the animation properties in one declaration.
+    The animation property is a shorthand property for the following properties: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.
+    The animation property can have from one to five values.
+    The order of the values are: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.
+    The animation property is used to create an animation.
+
+    syntax:
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+    name: Specifies the name of the @keyframes rule.
+    duration: Specifies how long time an animation should take to complete.
+    timing-function: Specifies the speed curve of the animation.
+    delay: Specifies a delay for the start of an animation.
+    iteration-count: Specifies the number of times an animation should run.
+    direction: Specifies whether an animation should be played forwards, backwards, or in alternate cycles.
+    fill-mode: Specifies a style for the target element when the animation is not playing.
+    play-state: Specifies whether the animation is running or paused.
+
+    @keyframes rule: The @keyframes rule specifies the animation code.
+    The animation code specifies what the animation looks like.
+    The animation code can be divided into two sections: the first section defines the animation name, and the second section defines the keyframes for the animation.
+    The animation code is the code that makes the animation happen.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translate(-50%, -50%);
+    animation-name: change-color;
+    animation-duration: 6s;
+}
+
+/* The @keyframes rule specifies the animation code. */
+/* @keyframes change-color {
+    from {
+        background-color: brown;
+    }
+
+    to {
+        background-color: burlywood;
+    }
+} */
+
+@keyframes change-color {
+    0% {
+        background-color: brown;
+    }
+
+    50% {
+        background-color: burlywood;
+    }
+
+    100% {
+        background-color: brown;
+    }
+}
