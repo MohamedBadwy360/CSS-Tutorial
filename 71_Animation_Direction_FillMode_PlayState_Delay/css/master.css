@@ -1,0 +1,87 @@
+/*
+  Animation
+  - Iteration Count
+  - Timing Function
+  - Spinner Loading
+*/
+
+/* 
+    Animation Direction
+    - normal (default) => 0 to 100%
+    - reverse => 100% to 0
+    - alternate => 0 to 100% and 100% to 0
+    - alternate-reverse => 100% to 0 and 0 to 100%
+     
+    Animation Fill Mode
+    - none (default) => no effect
+    - forwards => keep the last keyframe
+    - backwards => keep the first keyframe
+    - both => keep the first and last keyframe
+
+    Animation Play State
+    - paused (default) => stop the animation 
+    - running => start the animation
+
+    Animation Delay 
+
+    Animation Iteration Count
+    - infinite (default) => infinite loop
+    - number => number of loops
+
+    Animation Timing Function
+    - ease (default) => slow start and end
+    - linear => same speed 
+    - ease-in  => slow start
+    - ease-out => slow end
+    - ease-in-out => slow start and end
+    - cubic-bezier(n,n,n,n) => custom speed
+
+    Animation Name
+    - @keyframes name { } => define the animation
+    - animation-name: name; => use the animation
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #e8e3e3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    border: chocolate solid 5px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    /* animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    /* animation-iteration-count: 2; */
+    /* animation-timing-function: linear;
+    animation-direction: normal; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-delay: 2s;
+    animation-fill-mode: forwards; */
+    animation: spin 2s infinite linear normal;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
