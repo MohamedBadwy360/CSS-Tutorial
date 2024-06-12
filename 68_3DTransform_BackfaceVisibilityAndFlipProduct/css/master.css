@@ -1,0 +1,64 @@
+/* 
+    backface visibility property is used to hide the back face of an element.
+    The backface-visibility property defines whether or not the back face of an element should be visible when facing the user.
+    The backface-visibility property is used to hide the back face of an element.
+    
+    backface-visibility: visible|hidden|initial|inherit;
+
+    visible: The back face is visible.
+    hidden: The back face is hidden.
+    initial: Sets this property to its default value.
+    inherit: Inherits this property from its parent element.
+
+    transform-style: preserve-3d; property is used to preserve the 3D transformations of an element.
+    The transform-style property is used to specify how nested elements are rendered in 3D space.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 40px auto;
+    width: 200px;
+    perspective: 600px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.box:hover {
+    transform: rotateY(-180deg);
+}
+
+.box .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    backface-visibility: hidden;
+}
+
+.box .front {
+    background-color: burlywood;
+}
+
+.box .back {
+    background-color: darkslategray;
+    transform: rotateY(180deg);
+}
