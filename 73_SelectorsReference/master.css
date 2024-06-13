@@ -1,0 +1,77 @@
+/*
+  CSS Selectors
+    - * => Target all elements
+    - Element OtherElement  => Target all OtherElement elements inside Element
+    - .class-name  => Target all elements with class class-name
+    - #id-name => Target element with id id-name
+    - .parent .child => Target child element inside parent element
+    - .class-one.class-two  => Target elements with both class-one and class-two
+    - .class-name div, .class-name p  => Target div and p elements with class class-name
+    - Element.class-name => p.class-name => Target all p elements with class class-name
+    - .parent > .child => Direct Child Selector
+    - .parent + .sibling => Adjacent Sibling Selector
+    - .parent ~ .sibling => General Sibling Selector
+    - [attribute] => Target elements with attribute
+    - [attribute=value] => Target elements with attribute value
+    - [attribute~=value] => Target elements with attribute value
+    - [attribute|=value] => Target elements with attribute value
+    - Element + Other Element => [div + p] => Target p elements that are immediately preceded by a div element
+    - Element ~ Other Elements => [p ~ div] => Target all div elements that are preceded by a p element
+    - [Attribute] => Target elements with attribute
+    - Element[Attribute] => Target elements with attribute
+    - [Attribute=Value] => Target elements with attribute value
+    - Element[Attribute=Value] => input[type="submit"] => Target input elements with type submit
+    - [Attribute~=Value] => Contains A Word => [title~=flower] => Target elements with title containing the word flower
+    - [Attribute*=Value] => Contains A String => [title*=beautiful] => Target elements with title containing the string beautiful 
+    - [Attribute^=Value] => Start With A String => [title^=beautiful] => Target elements with title starting with the string beautiful
+    - [Attribute$=Value] => End With A String => [title$=beautiful] => Target elements with title ending with the string beautiful
+    - :active => Target active link
+    - :checked => Target checked input
+    - :default => Target default input
+    - :disabled => Target disabled input
+    - :empty => Target empty elements
+    - :enabled => Target enabled input
+    - :first => Target first element
+    - :first-child => Target first child element
+    - :first-of-type => Target first element of a type
+    - :focus => Target focused input
+    - :hover => Target hovered element
+    - :in-range => Target input with a value within a specific range
+    - :invalid => Target invalid input
+    - :lang(language) => Target elements with a lang attribute
+    - :last-child => Target last child element
+    - :last-of-type => Target last element of a type
+    - :link => Target link
+    - :not(selector) => Target elements that do not match a specific selector
+    - :nth-child(n) => Target elements based on their position
+    - :nth-last-child(n) => Target elements based on their position, counting from the end
+    - :nth-last-of-type(n) => Target elements of a type based on their position, counting from the end
+    - :nth-of-type(n) => Target elements of a type based on their position
+    - :only-child => Target elements that are the only child of their parent
+    - :only-of-type => Target elements of a type that are the only ones of their parent
+    - :optional => Target optional input
+    - :out-of-range => Target input with a value outside a specific range
+    - :read-only => Target read-only input
+    - :read-write => Target read-write input
+    - :required => Target required input
+    - :root => Target root element
+    - :target => Target the current active element
+    - :valid => Target valid input
+    - :visited => Target visited link
+    - ::after => Insert content after an element
+    - ::before => Insert content before an element
+    - ::first-letter => Style the first letter of text
+    - ::first-line => Style the first line of text
+    - ::selection => Style the selected text
+    - :active => Target active link
+    - :checked => Target checked input
+    - :default => Target default input
+    - :disabled => Target disabled input
+    - :empty => Target empty elements
+    - :enabled => Target enabled input
+    - :first => Target first element
+    - :first-child => Target first child element
+    - :first-of-type => Target first element of a type
+    - :focus => Target focused input
+    - ::placeholder => Target placeholder text
+*/
