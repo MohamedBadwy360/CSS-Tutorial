@@ -1,0 +1,78 @@
+/* 
+    Media Queries and Responsive Design 
+    - Media Queries are a way to apply CSS rules based on the device characteristics 
+        and the browser window size and orientation and the device characteristics and 
+        the browser window size and orientation and the device characteristics and the browser window size and orientation
+        and the device characteristics and the browser window size and orientation and the device characteristics and the browser window size and orientation
+    - Media Queries are used to create responsive designs that adapt to different screen sizes and devices
+
+    Syntax
+    - @media media-type and (media-feature-rule / condition) {
+        CSS rules
+    }
+
+    Conditions
+    - width
+    - height
+    - min-width
+    - max-width
+    - min-height
+    - max-height
+    - orientation
+    - aspect-ratio
+    - device-aspect-ratio
+    - device-width
+    - device-height
+    - resolution
+    - color
+    - color-index
+    - monochrome
+    - scan
+    - grid
+    - update
+    - overflow-block
+    - overflow-inline
+    - pointer
+    - hover
+    - any-pointer
+    - any-hover
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.parent>div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 290px;
+}
+
+/* @media (max-width: 1000px) {
+    .parent>div {
+        background-color: green;
+    }
+}
+
+@media (min-width: 1200px) {
+    .parent>div {
+        background-color: blue;
+    }
+} */
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .parent>div {
+        background-color: green;
+    }
+}
