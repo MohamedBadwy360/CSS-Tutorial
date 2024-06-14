@@ -1,0 +1,25 @@
+/*
+  CSS Global Values
+  - inherit => The property takes the same computed value as the property for the element's parent.
+  - initial => The property takes its initial value.
+  - unset => The property takes its parent value if it exists, or its initial value if not.
+  --- If Inherit => inherit from parent element (if exists) 
+  --- If Not => initial value of the property 
+  - revert CSS Level [4] => The property takes the value it would have if the property were not specified in this element.
+  - all => The all property resets all properties except unicode-bidi, direction, and CSS Custom Properties.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid black;
+}
