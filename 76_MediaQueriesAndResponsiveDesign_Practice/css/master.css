@@ -1,0 +1,46 @@
+/*
+  Media Queries
+  Responsive Design
+  - Mobile First
+  - Test Devices
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.parent div {
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {}
+
+/* Small Screens */
+@media (min-width: 768px) {
+    .parent div {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 991px) {
+    .parent div {
+        flex-basis: calc(25% - 10px);
+    }
+}
